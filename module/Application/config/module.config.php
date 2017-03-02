@@ -7,9 +7,11 @@
 
 namespace Application;
 
+use Interop\Container\ContainerInterface;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
+use Doctrine;
 use MusicAlbum;
 
 return [
@@ -29,7 +31,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => MusicAlbum\Controller\IndexControllerFactory::class
         ],
     ],
     'view_manager' => [
