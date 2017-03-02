@@ -6,3 +6,14 @@ data/cache/*
 phpunit.xml
 ubuntu-xenial-16.04-cloudimg-console.log
 /.idea
+/composer.phar
+*.php~
+/files/*
+!files/.gitkeep
+/web/shared/site_pictures/*
+!web/shared/site_pictures/.gitkeep
+/.vagrant
+/bponline.box
+/node_modules/
+/web/bower-assets/
+/Vagrantfile
