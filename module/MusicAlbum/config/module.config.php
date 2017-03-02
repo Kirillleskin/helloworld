@@ -37,7 +37,26 @@ return [
 
     'router' => [
         'routes' => [
-
+            'login' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/login',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'login',
+                    ],
+                ],
+            ],
+            'registration' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/registration',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'registration',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [

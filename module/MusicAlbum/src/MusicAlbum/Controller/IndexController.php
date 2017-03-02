@@ -28,13 +28,16 @@ class IndexController extends AbstractActionController
 
     public function indexAction()
     {
-        $album = new Album();
-        $album->setName("Album name");
-        $album->setDescription("Album description");
+        return new ViewModel();
+    }
 
-        $this->entityManager->persist($album);
-        $this->entityManager->flush();
+    public function loginAction()
+    {
+        return new ViewModel();
+    }
 
+    public function registrationAction()
+    {
         return new ViewModel();
     }
 }
